@@ -1,7 +1,6 @@
 package com.home.projects;
 
 import cucumber.api.Format;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,7 +10,7 @@ import java.util.Date;
 
 public class Stepdefs {
 
-    private DateUtils dateUtils = new DateUtils();
+    private DateRangeCalculator dateUtils = new DateRangeCalculator();
 
     private  String message;
 

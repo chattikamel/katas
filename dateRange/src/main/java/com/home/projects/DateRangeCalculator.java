@@ -8,7 +8,7 @@ import java.util.Locale;
 /**
  * Created by chatti on 22/12/2016.
  */
-public class DateUtils {
+public class DateRangeCalculator {
 
 	public static final String BETWEEN = "Between ";
 	public static final String AND = " and ";
@@ -25,19 +25,19 @@ public class DateUtils {
 
 	private SimpleDateFormat dayOfWeekFormater = new SimpleDateFormat("EEEE", Locale.US);
 
-	public DateUtils from(Date date) {
+	public DateRangeCalculator from(Date date) {
 		begin = Calendar.getInstance();
 		begin.setTime(date);
 		return this;
 	}
 
-	public DateUtils today(Date date) {
+	public DateRangeCalculator today(Date date) {
 		today = Calendar.getInstance();
 		today.setTime(date);
 		return this;
 	}
 
-	public DateUtils to(Date date) {
+	public DateRangeCalculator to(Date date) {
 		end = Calendar.getInstance();
 		end.setTime(date);
 		return this;
