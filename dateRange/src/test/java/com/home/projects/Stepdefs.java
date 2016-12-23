@@ -15,13 +15,13 @@ public class Stepdefs {
     private  String message;
 
 
-    @Given("^a date range with start (.+),and end (.+)$")
+    @Given("^a date range with start (.+) and end (.+)$")
     public void a_date_range_with_start_and_end(@Format("MMM d yy") Date from, @Format("MMM d yy") Date to) throws Throwable {
 
         dateUtils.from(from).to(to);
     }
 
-    @Given("^a date range with start (.+) ,and today is (.+)$")
+    @Given("^a date range with start (.+) and today is (.+)$")
     public void a_date_range_with_start_and_today_is(@Format("MMM d yy") Date from, @Format("MMM d yy") Date today) throws Throwable {
         dateUtils.from(from).today(today);
     }
